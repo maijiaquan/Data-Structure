@@ -67,7 +67,6 @@ int LocateVex_AMG(AMGraph G , char v){
 	return i;
 }
 
-
 /*创建邻接矩阵、无向图*/
 int CreateUDN(AMGraph &G , int mode)
 {  
