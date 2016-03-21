@@ -413,9 +413,7 @@ int main() {
 				cout<<"请选择：1使用已有无向图，2自定义无向图"<<endl;
                 int mode;
 				cin>>mode;
-
 				AMGraph G_M;
-                
 				CreateUDN(G_M , mode);
                 Print_AMG(G_M);}break;
 
