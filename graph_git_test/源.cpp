@@ -50,8 +50,6 @@ int LocateVex_ALG(ALGraph G,int v)
     return i;
 }
 
-
-
 //普里姆算法 辅助数组
 typedef  struct closedge{
     char adjvex;
