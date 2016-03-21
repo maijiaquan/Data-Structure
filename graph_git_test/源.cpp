@@ -1,19 +1,3 @@
-//
-
-//  main.cpp
-
-//  Graph
-
-//
-
-//  Created by 麦小明 on 15/6/9.
-
-//  Copyright (c) 2015年 麦小明. All rights reserved.
-
-//
-
-
-
 #include <iostream>
 
 #define MaxInt 32767
@@ -60,7 +44,7 @@ typedef  struct closedge1{
 int LocateVex_ALG(ALGraph G,int v)
 {
     int i=0;
-     while(v!= G.vertices[i].data)
+     while(v != G.vertices[i].data)
          i++;
 
     return i;
@@ -297,19 +281,16 @@ void DFS1(ALGraph G,char d){
 
     while (p!=NULL) {
 
-        w=p->adjvex;
+        w =p->adjvex;
 
         if (visited[w]!=-1)
 
             DFS1(G, w);
 
-        p=p->nextarc;
+        p = p->nextarc;
 
     }
-
 }
-
-
 
 void DFS2(ALGraph G,int v){    //邻接表图的遍历
 
